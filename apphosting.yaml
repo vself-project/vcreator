@@ -1,0 +1,16 @@
+# Settings for Cloud Run
+# runConfig:
+#   minInstances: 2
+#   maxInstances: 100
+#   concurrency: 100
+#   cpu: 2
+#   memoryMiB: 1024
+
+# Environment variables and secrets
+env:
+  - variable: FIREBASE_ADMIN_CLIENT_EMAIL
+    secret: clientEmail
+  - variable: FIREBASE_ADMIN_PRIVATE_KEY
+    secret: privateKey
+  - variable: TELEGRAM_BOT_TOKEN
+    secret: botToken
