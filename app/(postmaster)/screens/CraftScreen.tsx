@@ -210,7 +210,7 @@ const CraftScreen: React.FC = () => {
         </div>
       </Card>
 
-      <form>
+      <form className='flex flex-col gap-1'>
         <div className='flex flex-row items-center gap-1 my-1'>
           <Text
             as='h3'
