@@ -47,44 +47,25 @@ const MainScreen: React.FC = () => {
         </Button>
       </Card> */}
       <div className='text-left mt-2'>
-        <Text as='h1' variant='header-2' className='mt-4 font-bold text-left'>
-          VSELF
+        <Text as='h1' variant='header-2' className='mt-4 font-bold text-left mb-2'>
+          vCreator
         </Text>
-        <Text
-          as='h2'
-          variant='subheader-3'
-          className='font-semibold text-left mb-2'
-        >
-          COMMUNITY TOKENISATION AND ENGAGEMENT
-        </Text>
-
         <Text as='p' variant='body-1' className='mb-2'>
           {
-            "🚀 Step into the future of marketing with vSelf - Community-as-a-service Platform for growth hacking and gamification."
+            "🚀 From AI content generation to campaign amplification: your all-in-one Telegram growth engine."
           }
-        </Text>
-        <Text as='p' variant='body-1' className=''>
-          🎯 The leading platform to boost engagement directly on Telegram.
         </Text>
       </div>
 
       <div className='mt-6 flex flex-col items-center'>
-        <p className='font-bold'>Choose to continue as</p>
         <Button
           view='action'
           className='w-[200px] h-[200px] mt-[10px]'
-          onClick={() => navigateTo("member")}
+          onClick={() => navigateTo("craft")}
         >
-          Community Member
+          Create Post
         </Button>
-        <Button
-          view='action'
-          className='w-[200px] mt-[10px]'
-          onClick={() => navigateTo("brand")}
-        >
-          Brand/Community Owner
-        </Button>
-      </div>
+      </div >
     </>
   );
 };
