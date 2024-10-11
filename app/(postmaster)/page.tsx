@@ -38,12 +38,12 @@ export default function Home() {
     <main className='flex min-h-screen flex-col items-center justify-center'>
       <nav className='flex gap-4 flex-row items-center justify-between w-full p-4'>
         <HomeButton />
-        <Label theme='info' size='m' className='h-7 rounded-xl items-center'>
+        {/* <Label theme='info' size='m' className='h-7 rounded-xl items-center'>
           <div className='flex flex-row items-center gap-2'>
             <Text variant='body-2'>Points: {userData?.mana || 0}</Text>
             <Icon data={Star} size={16}></Icon>
           </div>
-        </Label>
+        </Label> */}
         {/* {!wallet ? 
         <Button onClick={() => tonConnectUI.openModal()}>
           Connect Wallet
