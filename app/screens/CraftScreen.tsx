@@ -177,7 +177,7 @@ const CraftScreen: React.FC = () => {
       <Text as='h1' variant='header-2' className='mt-4 font-bold text-left'>
         STEP 2
       </Text>
-      <div className='flex flex-row gap-1 items-center'>
+      <div className='flex flex-row gap-1 items-center mb-1'>
         <Text
           as='div'
           variant='header-1'
