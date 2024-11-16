@@ -1,6 +1,6 @@
 "use client";
 
-import { $user, $userId } from "../../shared/model";
+import { $user, $userId } from "../shared/model";
 import { type User } from "firebase/auth";
 import { useUnit } from "effector-react";
 import { Link } from "@/components/Link/Link";

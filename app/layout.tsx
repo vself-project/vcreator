@@ -1,4 +1,4 @@
-import Root from "../../components/Root/Root";
+import Root from "../components/Root/Root";
 import "./style.css";
 
 export const metadata = {
