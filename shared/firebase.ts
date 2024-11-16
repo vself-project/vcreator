@@ -26,8 +26,7 @@ const SYSTEM_MESSAGE = dedent`
   products/services. Create ad text with an attention-grabbing title and a compelling 
   call to action that encourages users to take a targeted action.
 
-  IMPORTANT:
-  1. You must use HTML tags instead of Markdown for posts you create. Example: **text** converts to <b>text</b>
+  Once you created post contents pass it to postprocessing function as a parameter.
 `;
 
 const generationConfig = {

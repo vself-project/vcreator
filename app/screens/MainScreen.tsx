@@ -33,39 +33,43 @@ const MainScreen: React.FC = () => {
     );
   }, [userId]);
 
-  // let gravitySensor = new GravitySensor({ frequency: 60 });
-
-  // gravitySensor.addEventListener('reading', (e) => {
-  //   console.log(`Gravity along the X-axis ${gravitySensor.x}`);
-  //   console.log(`Gravity along the Y-axis ${gravitySensor.y}`);
-  //   console.log(`Gravity along the Z-axis ${gravitySensor.z}`);
-  // });
-
-  // gravitySensor.start();
-
-  // const acl = new Accelerometer({ frequency: 60 });
-  // acl.addEventListener('reading', () => {
-  //   console.log(`Acceleration along the X-axis ${acl.x}`);
-  //   console.log(`Acceleration along the Y-axis ${acl.y}`);
-  //   console.log(`Acceleration along the Z-axis ${acl.z}`);
-  // });
-
-  // acl.start();
-
-  // const handleOrientation = (event: any) => {
-  //   const absolute = event.absolute;
-  //   const alpha = event.alpha;
-  //   const beta = event.beta;
-  //   const gamma = event.gamma;
-  //   //...
-  //   console.log(absolute, alpha, beta, gamma);
-  // };
-
-  // window.addEventListener('deviceorientation', handleOrientation, true);
+  const mana = userData?.mana || 0;
+  const lastTap = userData?.lastTap ?? Date();
 
   return (
     <>
-      <Text>{}</Text>
+      {/* <Card className='p-4 gap-4 rounded-2xl flex flex-row items-center w-full'>
+        <Button size='m' className='w-full'>
+          <Text variant='body-1'>Farm Points</Text>
+        </Button>
+        <Button size='m' onClick={shareLink}>
+          <Text variant='body-1'>Invite Friend</Text>
+        </Button>
+      </Card> */}
+      <div className='text-left mt-2'>
+        <Text
+          as='h1'
+          variant='header-2'
+          className='mt-4 font-bold text-left mb-2'
+        >
+          vCreator
+        </Text>
+        <Text as='p' variant='body-1' className='mb-2'>
+          {
+            '🚀 From AI content generation to campaign amplification: your all-in-one Telegram growth engine.'
+          }
+        </Text>
+      </div>
+
+      <div className='mt-6 flex flex-col items-center'>
+        <Button
+          view='action'
+          className='w-[200px] h-[200px] mt-[10px]'
+          onClick={() => navigateTo('craft')}
+        >
+          Create Post
+        </Button>
+      </div>
     </>
   );
 };
