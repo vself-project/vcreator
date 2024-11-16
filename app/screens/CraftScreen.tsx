@@ -174,9 +174,6 @@ const CraftScreen: React.FC = () => {
   return (
     <>
       <BackButton onClick={() => navigateTo('selector')}></BackButton>
-      <Text as='h1' variant='header-2' className='mt-4 font-bold text-left'>
-        STEP 2
-      </Text>
       <div className='flex flex-row gap-1 items-center mb-1'>
         <Text
           as='div'
@@ -372,6 +369,11 @@ const CraftScreen: React.FC = () => {
             <Button
               onClick={() => {
                 if (config.context_prompt) {
+                  setConfig({
+                    ...config,
+                    message: 'Thinking...',
+                    isDraft: true,
+                  });
                   imaginePost(
                     config.context_prompt,
                     config.audience ?? '',

@@ -40,7 +40,8 @@ const generationConfig = {
 // Initialize the generative model with a model that supports your use case
 // Gemini 1.5 models are versatile and can be used with all API capabilities
 const model = getGenerativeModel(vertexAI, {
-  model: 'gemini-1.5-flash',
+  // model: 'gemini-1.5-flash',
+  model: 'gemini-pro',
   systemInstruction: SYSTEM_MESSAGE,
   generationConfig,
 });
